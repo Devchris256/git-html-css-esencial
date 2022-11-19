@@ -1,0 +1,56 @@
+:root{
+  --blue20:#232946;
+  --blue10:#B8C1EC;
+  --pink20:#D4939D;
+  --pink10:#EEBBC3;
+  --white:#FFFFFE;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: var(--blue20);
+  color: var(--white);
+  margin: 0;
+}
+
+/* titulos */
+h1, h2{
+  font-weight: 700;
+}
+h1{
+  font-size: 64px;
+  line-height: 78px;
+}
+h2{
+  font-size: 40px;
+  line-height: 48px;
+}
+h3{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+/* parrafo */
+p{
+  color: var(--blue10);
+}
+/* wrapper */
+.wrapeer{
+  inline-size: 636px;
+  position: relative;
+  inset-inline-start:530px;
+}
+
+/* hero */
+.hero{
+  max-inline-size: 100%;
+  block-size:350px;
+  size: 4.6%;
+  background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url(../img/patron-2.png);
+}
+
+
