@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik&display=swap"
+    rel="stylesheet">
   <title>El blog de Sari</title>
 </head>
 <body>
@@ -171,37 +172,39 @@
           <h4>Modelo de Caja</h4>
           <div class="slider">
             <div class="slider-content">
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+              <scroll-page class="slider-slider" id="1">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-              </div>
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+              </scroll-page>
+              <scroll-page class="slider-slider" id="1">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-              </div>
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+              </scroll-page>
+              <scroll-page class="slider-slider" id="1">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
+              </scroll-page>
+              <div class="slider-list">
+                <a href="#1"></a>
+                <a href="#2"></a>
+                <a href="#3"></a>
               </div>
-              <div class="slider-slider">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-              </div>
-              <p>Si tienes alguna pregunta escríbeme a <a href="mailto:atochepascual.saraichristina@gmail.com">me:atochepascual.saraichristina@gmail.com</a></p>
             </div>
           </div>
         </div>
         <div class="section-5">
+          <p>Si tienes alguna pregunta escríbeme a <a href="mailto:atochepascual.saraichristina@gmail.com">me:devsaraichristina@gmail.com</a></p>
           <h4>Suscríbete a nuestro newsletter</h4>
-          <form>
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo Electronico">
-            <input type="submit" value="Suscribirme">
-          </form>
+          <div class="form">
+            <form>
+              <input type="text" required placeholder="Nombre">
+              <input type="email" required placeholder="Correo Electronico">
+              <input type="submit" value="Suscribirme">
+            </form>
+          </div>
         </div>
       </main>
     </div>
