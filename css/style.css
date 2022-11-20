@@ -21,20 +21,19 @@ h1, h2{
   font-weight: 700;
 }
 h1{
-  margin-block-start: 100px;
+  margin-block-start: 80px;
   margin-block-end: 16px;
-  font-size: 64px;
-  line-height: 78px;
+  font-size: 32px;
+  line-height: 39px;
 }
 h2{
   font-size: 40px;
   line-height: 48px;
-  margin-block-end: 40px;
 }
 h3{
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 29px;
   margin-block-end: 16px;
   margin-block-start: 0;
 }
@@ -42,6 +41,7 @@ h4{
   font-size: 24px;
   font-weight: 400;
 }
+
 /* parrafo */
 p{
   color: var(--blue10);
@@ -51,10 +51,9 @@ p{
 
 /* separador */
 hr{
-  border: 1px solid #616161;
-  margin-block-start: 58px;
-  margin-block-end: 40px;
+  display: none;
 }
+
 
 /* pre */
 pre{
@@ -67,19 +66,18 @@ pre{
   font-size: 16px;
   line-height: 24px;
   margin-block-end: 40px;
+  overflow-x: scroll;
 }
 
 /* wrapper */
 .wrapeer{
-  inline-size: 636px;
-  position: relative;
-  inset-inline-start:530px;
+  padding-inline:16px;
 }
 
 /* hero */
 .hero{
   max-inline-size: 100%;
-  block-size:350px;
+  block-size:96px;
   size: 4.6%;
   background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url(../img/patron-2.png);
 }
@@ -96,15 +94,8 @@ pre{
 }
 
 /* header */
-.header{
-  position: sticky;
-  inset-block-start: -50px;
-}
 .header-content {
-  position: absolute;
-  inset-block-start: 100px;
-  inset-inline-start: -330px;
-  inline-size: 222px;
+  margin-block-start: 30px;
 }
 .header-content summary {
   font-weight: 700;
@@ -251,7 +242,6 @@ pre{
 .footer-content{
   background: var(--pink10);
   padding-block: 47px;
-  border: 1px solid red;
 }
 .footer-content h3{
   text-align: center;
@@ -263,4 +253,51 @@ pre{
 }
 .redes img{
   margin-inline: 8px;
+}
+
+@media screen and (min-width:1190px) {
+  /* titulos */
+  h1 {
+      margin-block-start: 100px;
+      font-size: 64px;
+      line-height: 78px;
+    }
+  h2{
+    margin-block-end: 40px;
+  }
+  h3{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  /* separador   */
+  hr {
+      position: static;
+      margin-block-start: 58px;
+      margin-block-end: 40px;
+    }
+
+  /* pre */
+  pre{
+    overflow: visible;
+  }
+  .hero{
+    block-size: 350px;
+  }
+  .header{
+    position: sticky;
+    inset-block-start: -50px;
+  }
+  .header-content {
+    margin-block-start: 0;
+    position: absolute;
+    inset-block-start: 100px;
+    inset-inline-start: -330px;
+    inline-size: 222px;
+  }
+  .wrapeer{
+    inline-size: 636px;
+    position: relative;
+    inset-inline-start:530px;
+    padding-inline:0;
+  }
 }
