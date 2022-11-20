@@ -124,7 +124,7 @@ pre{
 }
 .header-content li:hover{
   background-color: var(--pink20);
-  color: var(--white);
+  color: var(--blue20);
 }
 
 /* imagenes */
@@ -244,4 +244,23 @@ pre{
   background: var(--pink10);
   border:none;
   color: var(--blue20);
+  margin-block-end: 80px;
+}
+
+/* footer */
+.footer-content{
+  background: var(--pink10);
+  padding-block: 47px;
+  border: 1px solid red;
+}
+.footer-content h3{
+  text-align: center;
+  font-weight: 400;
+  color: var(--blue20);
+}
+.redes{
+  text-align: center;
+}
+.redes img{
+  margin-inline: 8px;
 }
